@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script src="jquery-3.6.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("div").fadeIn();
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("div").fadeOut();
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("div").fadeToggle();
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#4").click(function(){
+					$("div").fadeTo(1000,0.5);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div style="display:none;">
+			Ansh
+		</div>
+			<button id="1">Fade In</button>
+			<button id="2">Fade Out</button>
+			<button id="3">Fade Toggle</button>
+			<button id="4">Fade To</button>
+		
+	</body>
+</html>
