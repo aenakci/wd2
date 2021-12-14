@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.6.0.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<script> 
+			$(document).ready(function(){
+				$("#flip").click(function(){
+					$("#panel").slideToggle("slow");
+				});
+			});
+		</script>
+		<style> 
+		*{
+			font-family: 'Corinthia', cursive;
+		}
+			#panel, #flip {
+			padding: 5px;
+			text-align: center;
+			background-color: #e5eecc;
+			border: solid 1px #c3c3c3;
+			}
+			#flip{
+				font-size:60px;
+			}
+			#panel {
+				color:red;
+				background:black;
+				padding: 50px;
+					display: none;
+					
+			}
+			h1{
+				font-size:36px;
+			}
+		</style>
+		</head>
+		<body>
+ 
+		<div id="flip">Click to slide down panel</div>
+		<div id="panel"><h1>AENAKCI</h1></div>
+
+		</body>
+</html>

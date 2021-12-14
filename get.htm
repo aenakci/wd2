@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="jquery-3.6.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					alert($("p").text());
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#2").click(function(){
+					alert($("p").html());
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>SYBCA THE <b>GREAT</b>CLASS</p>
+		<button id="1">Show text</button>
+		<button id="2">Show HTMl</button>
+	</body>
+</html>

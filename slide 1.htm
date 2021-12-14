@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script src="jquery-3.6.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#1").click(function(){
+					$("div").slideDown();
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#2").click(function(){
+					$("div").slideUp();
+				});
+			});
+			
+			$(document).ready(function(){
+				$("#3").click(function(){
+					$("div").slideToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div style="display:none;">
+			AENAKCI
+		</div>
+		<button id="1">Slide Down</button>
+		<button id="2">Slide Up</button>
+		<button id="3">Slide Toggle</button>
+	</body>
+</html>
